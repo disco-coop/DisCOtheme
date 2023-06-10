@@ -1,0 +1,107 @@
+/*
+ Theme Name:     DisCOtheme
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme for DisCO.coop
+ Author:         Javier Arturo Rodriguez
+ Author URI:     https://javier.rodriguez.org.mx/
+ Template:       Divi
+ Version:        0.0.1
+*/
+
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;600;800;900&display=swap');*/
+
+/*
+#footer-widgets {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: right;
+}
+
+h2.widgettitle {
+    color: #FF0099 !important;
+}
+ */
+#main-content {
+    background-color: #000000!important;
+}
+
+.et_pb_section {
+    background-color: transparent;
+}
+
+#title-hero {
+    background: url("img/dots01.png") top right no-repeat;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+#title-logo {
+    width: 80%;
+    max-width: 800px;
+    padding-top: 107px;
+}
+
+body.page-home #main-content ,
+.bg01 {
+    background: url("img/bg01.png") top right repeat-y fixed;
+    background-size: contain;
+}
+
+.dots02 {
+    background: url("img/dots02.png") left bottom no-repeat;
+}
+
+.dots03 {
+    background: url("img/dots03.png") center bottom no-repeat;
+}
+
+.blob01 {
+    position: absolute;
+    top: 30%;
+    right: 12%;
+    z-index: -100;
+    width: 320px;
+}
+
+.oil02 {
+    background: url("img/oil02.png") top left no-repeat;
+    background-size: contain;
+}
+
+.title-container {
+    min-height: 780px;
+}
+
+.title-container h2 {
+    font-size: 2.7rem;
+    padding-top: 1em;
+}
+.pink {
+    color: #FF0099;
+}
+
+.pink-bg {
+    background-color: #FF0099;
+}
+
+.center {
+    text-align: center;
+}
+
+.image-link .name-tag {
+    z-index: 1000;
+    position: relative;
+    top: 0px;
+    left: 0;
+    display: block;
+    text-align: center;
+}

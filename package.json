@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "rollup --config",
+    "watch": "rollup --config --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@rollup/plugin-buble": "^1.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "postcss": "^8.4.24",
+    "rollup": "^3.24.0",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.63.3"
+  }
+}

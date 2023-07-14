@@ -1,0 +1,56 @@
+$icon-care-work: "\ea01";
+$icon-community-governance: "\ea02";
+$icon-creators-of-commons: "\ea03";
+$icon-federation: "\ea04";
+$icon-reimagining-value: "\ea05";
+$icon-transnational: "\ea06";
+$icon-value-based: "\ea07";
+
+@font-face {
+  font-family: "disco";
+  src: url("../font/disco.eot");
+  src: url("../font/disco.eot?7x37l3#iefix") format("embedded-opentype"), url("../font/disco.woff2?7x37l3") format("woff2"), url("../font/disco.woff?7x37l3") format("woff"), url("../font/disco.ttf?7x37l3") format("truetype"), url("../font/disco.svg?7x37l3#disco") format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+%icon {
+  display: inline-block;
+  font-family: "disco" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+}
+
+.icon-care-work::before {
+  content: "\ea01";
+}
+.icon-community-governance::before {
+  content: "\ea02";
+}
+.icon-creators-of-commons::before {
+  content: "\ea03";
+}
+.icon-federation::before {
+  content: "\ea04";
+}
+.icon-reimagining-value::before {
+  content: "\ea05";
+}
+.icon-transnational::before {
+  content: "\ea06";
+}
+.icon-value-based::before {
+  content: "\ea07";
+}

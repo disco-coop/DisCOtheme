@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin paper-variant($paper, $bg) {
+  .paper-#{$paper} {
+    background: url("../img/bg#{$bg}.png") top right repeat-y, url("../img/paper-#{$paper}.png") repeat;
+    background-size: cover, auto;
+  }
+  .section-#{$paper} {
+    @extend .paper-#{$paper};
+    @extend .text-black;
+    color: $black;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.5) inset;
+  }
+  .banner-#{$paper} {
+    @extend .paper-#{$paper};
+    font-size: 4rem;
+    color: $black;
+    line-height: 140%;
+  }
+}
+

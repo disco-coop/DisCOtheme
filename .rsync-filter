@@ -1,0 +1,12 @@
++ README.md
++ *.css
++ *.php
++ *.png
++ dist/
++ dist/*
++ img/
++ img/*
++ font/
++ font/*
+- *
+- .*

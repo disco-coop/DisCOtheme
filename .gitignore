@@ -80,3 +80,6 @@ fabric.properties
 /.idea
 /node_modules
 /dist
+
+# VSCode
+/.vscode/

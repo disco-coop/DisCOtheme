@@ -1,21 +1,69 @@
 @import "variables";
 
+//-------------//
+// Backgrounds //
+//-------------//
 @mixin paper-variant($paper, $bg) {
-  .paper-#{$paper} {
-    background: url("../img/bg#{$bg}.png") top right repeat-y, url("../img/paper-#{$paper}.png") repeat;
-    background-size: cover, auto;
-  }
-  .section-#{$paper} {
-    @extend .paper-#{$paper};
-    @extend .text-black;
-    color: $black;
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.5) inset;
-  }
-  .banner-#{$paper} {
-    @extend .paper-#{$paper};
-    font-size: 4rem;
-    color: $black;
-    line-height: 140%;
-  }
+    div.paper-#{$paper} {
+        background: url("../img/bg#{$bg}.png") top left repeat-y, url("../img/paper-#{$paper}.png") repeat !important;
+        background-size: 250%, auto !important;
+    }
+    div.section-#{$paper} {
+        @extend .paper-#{$paper};
+        @extend .text-black;
+        color: $black;
+        box-shadow: 0 16px 16px rgba(0, 0, 0, 0.5) inset;
+    }
+    div.banner-#{$paper} {
+        @extend .paper-#{$paper};
+        font-size: 4rem;
+        color: $black;
+        line-height: 140%;
+    }
 }
+
+
+//--------------//
+// Media querys //
+//--------------//
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+);
+
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs")) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: map-get($breakpoints, "sm")) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: map-get($breakpoints, "md")) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: map-get($breakpoints, "lg")) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: map-get($breakpoints, "xl")) {
+        @content;
+    }
+}
+
+
+
 

@@ -9,8 +9,8 @@ jQuery(function () {
 
   jQuery('.add-blob').each((i, e) => {
     // console.log("add-blob", e);
-    let n = 1 + Math.floor(Math.random() * 3);
-    let img = 'blob0' + n + '.svg';
+    // let n = 1 + Math.floor(Math.random() * 3);
+    let img = 'blob0' + (i%3+1) + '.svg';
     let tag = jQuery('<img class="blob" src="/wp-content/themes/DisCOtheme/img/' + img + '">')
     jQuery(e).prepend(tag);
   })
